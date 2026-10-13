@@ -1,0 +1,24 @@
+{
+  "table": "u_institution_details",
+  "label": "Institution Details",
+  "extends": "Task",
+  "fields": [
+    {
+      "name": "u_student_name",
+      "label": "Student Name",
+      "type": "string",
+      "max_length": 100
+    },
+    {
+      "name": "u_branch",
+      "label": "Branch",
+      "type": "choice",
+      "choices": [
+        "ECE",
+        "EEE",
+        "CSE"
+      ]
+    }
+  ],
+  "note": "Create/verify these fields in System Definition > Tables. Actual dictionary names must match the instance."
+}

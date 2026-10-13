@@ -1,0 +1,9 @@
+{
+  "name": "script-controlled-acl",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ServiceNow ACL example restricting record access based on a field value",
+  "scripts": {
+    "note": "These JavaScript files are intended to be run in ServiceNow, not Node.js."
+  }
+}

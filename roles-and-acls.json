@@ -1,0 +1,35 @@
+{
+  "table": "u_institution_details",
+  "roles": {
+    "bb1": "Read EEE records",
+    "bb2": "Create records",
+    "bb3": "Write/update records",
+    "bb4": "Delete records"
+  },
+  "acls": [
+    {
+      "operation": "read",
+      "field": "none",
+      "role": "bb1",
+      "condition": "u_branch is EEE",
+      "script": "acl/read-acl-script.js"
+    },
+    {
+      "operation": "create",
+      "field": "none",
+      "role": "bb2"
+    },
+    {
+      "operation": "write",
+      "field": "none",
+      "role": "bb3"
+    },
+    {
+      "operation": "delete",
+      "field": "none",
+      "role": "bb4"
+    }
+  ],
+  "admin_override": true,
+  "note": "The read ACL's Branch = EEE condition filters records; the script checks the bb1 role. Validate admin override and all matching ACLs in your instance."
+}
