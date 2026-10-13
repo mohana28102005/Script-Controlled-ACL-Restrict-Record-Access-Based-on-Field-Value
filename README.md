@@ -24,6 +24,13 @@ This folder contains the project code for a ServiceNow Personal Developer Instan
 2. Run `scripts/01-create-user-roles.js` in **System Definition > Scripts - Background**.
 3. Run `scripts/02-create-sample-records.js`.
 4. Elevate to `security_admin`, then run `scripts/03-create-acls.js`, or create the ACLs manually.
-5. Test by impersonating users with different role combinations.
+5. Test by imperso;
+   6.nating users with different role combinations.
+documentation link:https://docs.google.com/document/d/1IS2gqIcDP8qJ1eH7UlUyAcXORQcQWAEV/edit?usp=drivesdk&ouid=108842271138279259840&rtpof=true&sd=true
 
+demo link:https://drive.google.com/file/d/1jN29ZR8VgCb8PWc24cky6SjkFYOPLmQL/view?usp=drivesdk
+
+
+   
+documentation link
 The ACL creation API can differ between ServiceNow releases. If step 4 fails, create the ACLs manually in **System Security > Access Control (ACL)** using the configuration in `config/roles-and-acls.json`.
